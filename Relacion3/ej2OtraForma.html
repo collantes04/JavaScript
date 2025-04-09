@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cadena, patron = /^ [a-zA-ZáéíóúÁÉÍÓÚñÑ]+$/;
+
+        do{
+            cadena = prompt("Introduzca un texto").replace(/\s+/,'');
+        } while(!patron.test(cadena));
+
+
+        function mostrarInfoCadena(cadena){
+            if(cadena == cadena.toLowerCase()){
+                document.write("Todo mayusculas");
+            } else if(cadena == cadena.toUpperCase()){
+                document.write("Todo minusculas");
+            } else {
+                document.write("Combinado de mayusculas y minusculas");
+            }
+        }
+    </script>
+</body>
+</html>
