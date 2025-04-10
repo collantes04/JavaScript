@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cuadrado(base, altura){
+            for(let i = 0; i <= base-1; i++){
+                document.writeln("#");
+            }
+            document.writeln("<br>");
+            for(let h = 0; h <= altura; h++){
+                if(h == 0 || h == base){
+                    document.writeln("#");
+                } else {
+                    document.writeln("&nbsp;");
+                }
+            }
+            document.writeln("<br>");
+            for(let i = 0; i <= base-1; i++){
+                document.writeln("#");
+            }
+        }
+
+        let b = prompt("Base");
+        let h = prompt("Altura");
+        cuadrado(b, h);
+    </script>
+</body>
+</html>

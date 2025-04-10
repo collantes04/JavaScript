@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function linea(num, char){
+            let espacio = "&nbsp;";
+
+            for (let h = 1; h <= num ; h++) {
+
+                for(let i = h; i < num; i++){
+                    document.write(espacio);
+
+                
+                }
+                for(let j = 0; j < h;  j++){
+                    document.write(char);
+                }
+                document.write("<br>");
+            }
+        }
+        
+        let numero = prompt("Introduce la altura");
+        let caracter = prompt("Introduce el caracter de la piramide");
+        linea(numero, caracter);
+
+    </script>
+</body>
+</html>
